@@ -50,3 +50,51 @@ var Page = React.createClass({
 
 module.exports = Page;
 ```
+
+## Styles
+
+Styles are a proof of concept based on Christopher Chedeau's [@vjeux](https://twitter.com/vjeux) [talk](https://speakerdeck.com/vjeux/react-css-in-js) at NationJS.
+
+example : 
+
+```js
+'use strict';
+
+var util = require('../utils');
+var Variables = require('./variables');
+
+module.exports = function(isHovered, custom) {
+	var base = {
+		color: '#1EAEDB',
+		backgroundColor: 'transparent'
+	}
+
+	var hover = {
+		color:'#0FA0CE'
+	}
+	return util.m(base, isHovered ? hover : {}, custom ? custom : {});
+}
+```
+
+Allows a composition of styles as well as simple customization with the custom parameter which is props.style
+
+```js
+
+getInitialState: function() {
+	return {
+		hover:false 
+	};
+},
+
+toggleHover: function(e) {
+	this.setState({hover:!this.state.hover});
+},
+
+render: function() {
+	var jss = Styles.Button(this.props.primary, this.state.hover, this.props.style);
+	return (
+		<button style={jss} onMouseOver={this.toggleHover} onMouseOut={this.toggleHover}>{this.props.children}</button>
+	);
+}
+```
+
