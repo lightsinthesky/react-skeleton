@@ -1,16 +1,16 @@
 {
   "name": "react-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Skeleton CSS Framework built in React",
   "main": "index.js",
   "repository": {
-    "type":"git",
-    "url":"lightsinthesky/react-skeleton"
+    "type": "git",
+    "url": "lightsinthesky/react-skeleton"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage":"http://react-skeleton.github.io",
+  "homepage": "http://react-skeleton.github.io",
   "keywords": [
     "react",
     "skeleton"
