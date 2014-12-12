@@ -1,0 +1,26 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton CSS Framework built in React",
+  "main": "index.js",
+  "repository": {
+    "type":"git",
+    "url":"lightsinthesky/react-skeleton"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage":"http://react-skeleton.github.io",
+  "keywords": [
+    "react",
+    "skeleton"
+  ],
+  "author": "Andrew Wilson <andrew@lightsinthesky.io>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^0.12.1"
+  },
+  "dependencies": {
+    "object-assign": "^2.0.0"
+  }
+}
