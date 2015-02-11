@@ -18,7 +18,7 @@
   "author": "Andrew Wilson <andrew@lightsinthesky.io>",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^0.12.1"
+    "react": "*"
   },
   "dependencies": {
     "enquire.js": "^2.1.1"
